@@ -1,13 +1,184 @@
 
 /* Reset de ajustes de texto */
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html {
-    -ms-text-size-adjust: 100%; /* Ajuste de tamanho de texto no IE */
-    -webkit-text-size-adjust: 100%; /* Ajuste de tamanho de texto no Safari */
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
+/* Normalize.css - Ajustes de estilo padrão */
+html {
+    -ms-text-size-adjust: 100%; /* Ajuste de tamanho de texto para IE */
+    -webkit-text-size-adjust: 100%; /* Ajuste de tamanho de texto para Safari */
+}
 body {
     margin: 0; /* Remove a margem padrão do body */
 }
+
+/* Elementos de bloco padrão */
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block; /* Define elementos como blocos */
+}
+summary {
+    display: list-item; /* Exibe <summary> como um item de lista */
+}
+
+/* Elementos de mídia */
+audio, canvas, progress, video {
+    display: inline-block; /* Elementos de mídia em linha */
+}
+progress {
+    vertical-align: baseline; /* Alinhamento vertical para <progress> */
+}
+audio:not([controls]) {
+    display: none; /* Esconde áudio sem controles */
+    height: 0; /* Altura zero para esconder */
+}
+
+/* Elementos ocultos */
+[hidden], template {
+    display: none; /* Esconde elementos com [hidden] e <template> */
+}
+
+/* Links */
+a {
+    background-color: transparent; /* Fundo transparente para links */
+}
+a:active, a:hover {
+    outline-width: 0; /* Remove contorno ao interagir com links */
+}
+
+/* Estilos de texto */
+abbr[title] {
+    border-bottom: none; /* Remove sublinhado do abbr */
+    text-decoration: underline dotted; /* Sublinha com pontilhado */
+}
+b, strong {
+    font-weight: bolder; /* Define peso da fonte mais forte */
+}
+dfn {
+    font-style: italic; /* Estilo itálico para definição */
+}
+mark {
+    background: #ff0; /* Fundo amarelo para destaque */
+    color: #000; /* Texto preto */
+}
+small {
+    font-size: 80%; /* Texto menor */
+}
+sub, sup {
+    font-size: 75%; /* Texto em subscrito/suprcrito menor */
+    line-height: 0; /* Altura da linha zero */
+    position: relative; /* Posição relativa para sub/sup */
+}
+sub {
+    bottom: -0.25em; /* Posiciona subscrito */
+}
+sup {
+    top: -0.5em; /* Posiciona supracito */
+}
+
+/* Figuras */
+figure {
+    margin: 1em 40px; /* Margem para figuras */
+}
+img {
+    border-style: none; /* Remove bordas de imagens */
+}
+
+/* Estilos de código */
+code, kbd, pre, samp {
+    font-family: monospace, monospace; /* Fonte monospace para código */
+    font-size: 1em; /* Tamanho de fonte padrão */
+}
+
+/* Separador horizontal */
+hr {
+    box-sizing: content-box; /* Define box-sizing para <hr> */
+    height: 0; /* Altura zero */
+    overflow: visible; /* Overflow visível */
+}
+
+/* Estilização de formulários */
+button, input, select, textarea, optgroup {
+    font: inherit; /* Herda fonte do elemento pai */
+    margin: 0; /* Remove margens padrão */
+}
+optgroup {
+    font-weight: bold; /* Negrito para grupos de opções */
+}
+button, input {
+    overflow: visible; /* Visibilidade de overflow */
+}
+button, select {
+    text-transform: none; /* Sem transformação de texto */
+}
+
+/* Estilo de botões */
+button, [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button; /* Estilo de botão para WebKit */
+}
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none; /* Remove borda interna do botão */
+    padding: 0; /* Remove preenchimento interno */
+}
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText; /* Estilo de foco para Firefox */
+}
+
+/* Estilos de fieldset e legend */
+fieldset {
+    border: 1px solid #c0c0c0; /* Borda cinza para fieldset */
+    margin: 0 2px; /* Margens pequenas */
+    padding: .35em .625em .75em; /* Preenchimento */
+}
+legend {
+    color: inherit; /* Herda cor do texto */
+    display: table; /* Exibe como tabela */
+    max-width: 100%; /* Largura máxima de 100% */
+    padding: 0; /* Sem preenchimento */
+    white-space: normal; /* Quebra de linha normal */
+}
+
+/* Estilos de textarea */
+textarea {
+    overflow: auto; /* Adiciona rolagem automática */
+}
+
+/* Estilos de inputs tipo checkbox e radio */
+[type=checkbox], [type=radio] {
+    padding: 0; /* Remove preenchimento */
+}
+
+/* Estilos de input tipo number */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto; /* Altura automática para botões de spin */
+}
+
+/* Estilo de input tipo search */
+[type=search] {
+    -webkit-appearance: textfield; /* Estilo de campo de texto */
+    outline-offset: -2px; /* Offset do contorno */
+}
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none; /* Remove decoração de pesquisa */
+}
+
+/* Estilo para botões de upload de arquivo */
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* Estilo de botão para upload */
+    font: inherit; /* Herda fonte do elemento pai */
+}
+
 
 
 /*-------------------------------------------------------------------------------------------------------*/
