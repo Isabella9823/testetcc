@@ -314,7 +314,7 @@ a {
 }
 .w3-disabled, .w3-btn:disabled, .w3-button:disabled {
     cursor: not-allowed; /* Cursor de não permitido */
-    opacity: 0.3; /* Reduz a opacidade para indicar desativação */
+    
 }
 .w3-disabled *, :disabled * {
     pointer-events: none; /* Desativa eventos em elementos desabilitados */
@@ -364,12 +364,7 @@ a {
 }
 
 /* Estilos para Efeito de Ripple */
-.w3-ripple:active {
-    opacity: 0.5; /* Reduz a opacidade ao ativar */
-}
-.w3-ripple {
-    transition: opacity 0s; /* Transição instantânea de opacidade */
-}
+
 
 /* Estilos para Inputs */
 .w3-input {
