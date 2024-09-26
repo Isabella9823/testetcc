@@ -820,13 +820,7 @@ a {
 }
 
 /* Animação de Opacidade */
-.w3-animate-opacity {
-    animation: opac 0.8s; /* Animação de transição de opacidade */
-}
-@keyframes opac {
-    from { opacity: 0; } /* Começa invisível */
-    to { opacity: 1; } /* Fica totalmente visível */
-}
+
 
 /* Animações de Entrada a partir do Topo */
 .w3-animate-top {
