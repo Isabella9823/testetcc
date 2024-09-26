@@ -314,7 +314,7 @@ a {
 }
 .w3-disabled, .w3-btn:disabled, .w3-button:disabled {
     cursor: not-allowed; /* Cursor de não permitido */
-    
+    opacity: 0.3; /* Reduz a opacidade para indicar desativação */
 }
 .w3-disabled *, :disabled * {
     pointer-events: none; /* Desativa eventos em elementos desabilitados */
@@ -364,8 +364,11 @@ a {
 }
 
 /* Estilos para Efeito de Ripple */
+.w3-ripple:active {
+    opacity: 0.5; /* Reduz a opacidade ao ativar */
+}
 .w3-ripple {
-    transition: none; /* Remove transições de opacidade */
+    transition: opacity 0s; /* Transição instantânea de opacidade */
 }
 
 /* Estilos para Inputs */
@@ -811,14 +814,33 @@ a {
     100% { transform: rotate(359deg); } /* Fim da rotação */
 }
 
+/* Animações de Fade */
+.w3-animate-fading {
+    animation: fading 10s infinite; /* Animação de fading em loop */
+}
+@keyframes fading {
+    0% { opacity: 0; } /* Começa invisível */
+    50% { opacity: 1; } /* Fica totalmente visível */
+    100% { opacity: 0; } /* Volta a ficar invisível */
+}
+
+/* Animação de Opacidade */
+.w3-animate-opacity {
+    animation: opac 0.8s; /* Animação de transição de opacidade */
+}
+@keyframes opac {
+    from { opacity: 0; } /* Começa invisível */
+    to { opacity: 1; } /* Fica totalmente visível */
+}
+
 /* Animações de Entrada a partir do Topo */
 .w3-animate-top {
     position: relative; /* Necessário para a animação */
     animation: animatetop 0.4s; /* Animação de entrada a partir do topo */
 }
 @keyframes animatetop {
-    from { top: -300px; } /* Começa acima da tela */
-    to { top: 0; } /* Termina na posição original */
+    from { top: -300px; opacity: 0; } /* Começa acima da tela e invisível */
+    to { top: 0; opacity: 1; } /* Termina na posição original e visível */
 }
 
 /* Animações de Entrada a partir da Esquerda */
@@ -827,8 +849,8 @@ a {
     animation: animateleft 0.4s; /* Animação de entrada a partir da esquerda */
 }
 @keyframes animateleft {
-    from { left: -300px; } /* Começa à esquerda da tela */
-    to { left: 0; } /* Termina na posição original */
+    from { left: -300px; opacity: 0; } /* Começa à esquerda da tela e invisível */
+    to { left: 0; opacity: 1; } /* Termina na posição original e visível */
 }
 
 /* Animações de Entrada a partir da Direita */
@@ -837,8 +859,8 @@ a {
     animation: animateright 0.4s; /* Animação de entrada a partir da direita */
 }
 @keyframes animateright {
-    from { right: -300px; } /* Começa à direita da tela */
-    to { right: 0; } /* Termina na posição original */
+    from { right: -300px; opacity: 0; } /* Começa à direita da tela e invisível */
+    to { right: 0; opacity: 1; } /* Termina na posição original e visível */
 }
 
 /* Animações de Entrada a partir da Parte Inferior */
@@ -847,8 +869,8 @@ a {
     animation: animatebottom 0.4s; /* Animação de entrada a partir da parte inferior */
 }
 @keyframes animatebottom {
-    from { bottom: -300px; } /* Começa abaixo da tela */
-    to { bottom: 0; } /* Termina na posição original */
+    from { bottom: -300px; opacity: 0; } /* Começa abaixo da tela e invisível */
+    to { bottom: 0; opacity: 1; } /* Termina na posição original e visível */
 }
 
 /* Animação de Zoom */
@@ -868,6 +890,19 @@ a {
     width: 100%!important; /* Expande para 100% ao focar */
 }
 
+/* Opacidade de Elementos */
+.w3-opacity, .w3-hover-opacity:hover {
+    opacity: 0.60; /* Opacidade padrão */
+}
+.w3-opacity-off, .w3-hover-opacity-off:hover {
+    opacity: 1; /* Totalmente opaco quando não opaco */
+}
+.w3-opacity-max {
+    opacity: 0.25; /* Opacidade máxima */
+}
+.w3-opacity-min {
+    opacity: 0.75; /* Opacidade mínima */
+}
 
 /* Filtros de Escala de Cinza */
 .w3-greyscale-max, .w3-grayscale-max,
