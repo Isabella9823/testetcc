@@ -289,7 +289,9 @@ a {
 .w3-btn, .w3-button {
     border: none; /* Sem borda */
     display: inline-block; /* Exibe como bloco inline */
-    padding: 8px 16px; /* Espaçamento interno */
+    padding: 15px 32px; /* Espaçamento interno */
+    justify-content: center; 
+    align-items: center; 
     vertical-align: middle; /* Alinha verticalmente */
     overflow: hidden; /* Oculta conteúdo que excede o contêiner */
     text-decoration: none; /* Remove sublinhado */
